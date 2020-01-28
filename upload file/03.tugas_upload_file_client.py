@@ -9,6 +9,9 @@ import io
 # definisikan IP server tujuan file akan diupload
 IP = "127.0.0.1"
 
+# Koneksi 2 komputer
+# IP = "172.20.10.2"
+
 # definisikan port number proses di server
 PORT = 5004
 
@@ -24,7 +27,7 @@ socket.connect((IP, PORT))
 # langkah 3: buka file yang akan diupload
 # buka file bernama "file_diupload.txt gunakan tipe byte ketika membuka file
 # masih hard code, file harus ada dalam folder yang sama dengan script python
-f = open("file_didownload.txt", 'rb')
+f = open("ggg.jpeg", 'wb')
 
 
 try:

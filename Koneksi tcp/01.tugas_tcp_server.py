@@ -2,7 +2,10 @@
 import socket
 
 # definisikan alamat IP binding  yang akan digunakan
+# local IP
 TCP_IP = '127.0.0.1'
+# koneksi 2 komputer
+# TCP_IP = '172.20.10.2'
 
 # definisikan port number binding  yang akan digunakan
 TCP_PORT = 5005
@@ -33,7 +36,7 @@ while 1:
 
     # menampilkan pesan yang diterima oleh server menggunakan print
     print("data diterima:", str(data))
-
+    print("data diterima:", str(data))
     # mengirim kembali data yang diterima dari client kepada client
     conn.send(data)
 

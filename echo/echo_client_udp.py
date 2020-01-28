@@ -3,6 +3,9 @@ import socket
 # initialize the ip to be addressed
 udp_ip = '127.0.0.1'
 
+# koneksi 2 komputer
+# 172.20.10.2
+
 # initialize the port to be addressed
 udp_port = 5004
 

@@ -4,6 +4,9 @@ import socket
 # definisikan IP server tujuan file akan diupload
 IP = "127.0.0.1"
 
+# koneksi 2 komputer
+# 172.20.10.2
+
 # definisikan port number proses di server
 PORT = 5004
 
@@ -18,7 +21,7 @@ socket.connect((IP, PORT))
 
 # buka file bernama "hasil_download.txt bertipe byte
 # masih hard code, file harus ada dalam folder yang sama dengan script python
-f = open('hasil_download.txt', 'w')
+f = open('ggg.jpeg', 'wb')
 
 # client loop forever menerima kiriman file dari server
 while 1:
@@ -26,7 +29,7 @@ while 1:
     data = socket.recv(BUFFER_SIZE)
 
     # tulis pesan yang diterima dari server ke file kita (hasil_download.txt)
-    f.write(data.decode('utf-8', 'strict'))
+    f.write(data)
 
     # berhenti jika sudah tidak ada pesan yang dikirim
     if not data:

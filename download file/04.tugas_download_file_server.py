@@ -2,7 +2,7 @@
 import socket
 
 # definisikan IP untuk binding
-IP = '127.0.0.1'
+IP = '172.20.10.2'
 
 # definisikan port untuk binding
 PORT = 5004
@@ -24,7 +24,7 @@ c, addr = socket.accept()
 
 # buka file bernama "file_didownload.txt
 # masih hard code, file harus ada dalam folder yang sama dengan script python
-f = open('file_didownload.txt', 'rb')
+f = open('tes.jpeg', 'rb')
 
 try:
     # baca file tersebut sebesar buffer

@@ -4,8 +4,11 @@ import socket
 # definisikan target IP server yang akan dituju
 UDP_IP = '127.0.0.1'
 
+# koneksi 2 komputer
+# UDP_IP = '172.20.10.2'
+
 # definisikan target port number server yang akan dituju
-UDP_PORT = 5005
+UDP_PORT = 5008
 
 PESAN = "Hello World!"
 
@@ -24,7 +27,11 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # Internet & UDP
 
 # step 2: client can immediately send message; if server not ready, message will be dropped
 # lakukan loop 10 kali
+
+y = 1
 for x in range(10):
     # definisikan pesan yang akan dikirim
-    sock.sendto(PESAN.encode(), (UDP_IP, UDP_PORT))
+    x = PESAN + str(y)
+    sock.sendto(x.encode(), (UDP_IP, UDP_PORT))
+    y = y+1
     # kirim pesan

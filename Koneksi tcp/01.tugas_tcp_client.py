@@ -2,7 +2,10 @@
 import socket
 
 # definisikan tujuan IP server
+# local IP
 TCP_IP = '127.0.0.1'
+#koneksi 2 komputer
+# TCP_IP = '172.20.10.2'
 
 # definisikan port dari server yang akan terhubung
 TCP_PORT = 5005
